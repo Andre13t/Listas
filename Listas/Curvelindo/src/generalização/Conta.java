@@ -63,7 +63,7 @@ public class Conta {
 	}
 
 	public boolean saque(double dinheiro) {
-		if (dinheiro > saldo) {
+		if (dinheiro >= saldo) {
 			saldo -= dinheiro;
 			return true;
 		} else
